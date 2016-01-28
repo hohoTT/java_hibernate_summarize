@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd" uri="file:///F:/备份/hibernate-release-4.2.4.Final/hibernate-release-4.2.4.Final/project/hibernate-core/src/main/resources/org/hibernate/hibernate-configuration-3.0.dtd"/>
+</catalog>

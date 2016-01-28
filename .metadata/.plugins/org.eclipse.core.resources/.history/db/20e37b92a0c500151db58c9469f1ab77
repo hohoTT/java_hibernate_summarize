@@ -1,0 +1,28 @@
+package com.wt.hibernate.helloWorld;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HibernateText {
+
+	@Test
+	public void test() {
+
+		// 1. 创建一个 SessionFactory 对象
+		
+		// 2. 创建一个 Session 对象
+		
+		// 3. 开启事务
+		
+		// 4. 执行保存操作
+		
+		// 5. 提交事务
+		
+		// 6. 关闭 Session 
+		
+		// 7. 关闭 SessionFactory 对象
+			
+	}
+
+}

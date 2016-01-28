@@ -1,0 +1,186 @@
+!SESSION 2016-01-28 15:44:15.674 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2016-01-28 15:44:37.055
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-01-28 15:53:07.318
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-01-28 15:53:07.318
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.318
+!MESSAGE Software being installed: Hibernate Tools Source 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.318
+!MESSAGE Missing requirement: Hibernate Jdt Core 3.7.1.Final-v20131205-0918-B107 (org.jboss.tools.hibernate.jpt.core 3.7.1.Final-v20131205-0918-B107) requires 'bundle org.eclipse.jpt.common.utility [2.2.0,2.3.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:07.318
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.318
+!MESSAGE From: Hibernate Tools 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.feature.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.318
+!MESSAGE To: org.jboss.tools.hibernate.jpt.core [3.7.1.Final-v20131205-0918-B107]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:07.318
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.318
+!MESSAGE From: Hibernate Tools Source 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.318
+!MESSAGE To: org.hibernate.eclipse.feature.feature.group [3.7.1.Final-v20131205-0918-B107]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-01-28 15:53:07.326
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-01-28 15:53:07.326
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.326
+!MESSAGE Software being installed: Hibernate Tools Source 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.326
+!MESSAGE Missing requirement: Hibernate Jdt Core 3.7.1.Final-v20131205-0918-B107 (org.jboss.tools.hibernate.jpt.core 3.7.1.Final-v20131205-0918-B107) requires 'bundle org.eclipse.jpt.common.utility [2.2.0,2.3.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:07.326
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.326
+!MESSAGE From: Hibernate Tools 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.feature.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.326
+!MESSAGE To: org.jboss.tools.hibernate.jpt.core [3.7.1.Final-v20131205-0918-B107]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:07.326
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.326
+!MESSAGE From: Hibernate Tools Source 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:07.326
+!MESSAGE To: org.hibernate.eclipse.feature.feature.group [3.7.1.Final-v20131205-0918-B107]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-01-28 15:53:38.975
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-01-28 15:53:38.975
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.975
+!MESSAGE Software being installed: JBoss Tools - Tests - Hibernate Developer Resources 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.975
+!MESSAGE Missing requirement: Hibernate Tools 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse 3.7.1.Final-v20131205-0918-B107) requires 'bundle org.eclipse.datatools.connectivity 1.2.7' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.975
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.975
+!MESSAGE From: Hibernate Console Test Plug-in 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.console.test 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.975
+!MESSAGE To: bundle org.hibernate.eclipse 3.7.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.975
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.975
+!MESSAGE From: JBoss Tools - Tests - Hibernate 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.975
+!MESSAGE To: org.hibernate.eclipse.console.test [3.7.1.Final-v20131205-0918-B107]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.975
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.975
+!MESSAGE From: JBoss Tools - Tests - Hibernate Developer Resources 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.975
+!MESSAGE To: org.hibernate.eclipse.test.feature.feature.group [3.7.1.Final-v20131205-0918-B107]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-01-28 15:53:38.978
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-01-28 15:53:38.978
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.978
+!MESSAGE Software being installed: JBoss Tools - Tests - Hibernate Developer Resources 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.978
+!MESSAGE Missing requirement: Hibernate Tools 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse 3.7.1.Final-v20131205-0918-B107) requires 'bundle org.eclipse.datatools.connectivity 1.2.7' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.978
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.978
+!MESSAGE From: Hibernate Console Test Plug-in 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.console.test 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.978
+!MESSAGE To: bundle org.hibernate.eclipse 3.7.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.978
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.978
+!MESSAGE From: JBoss Tools - Tests - Hibernate 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.978
+!MESSAGE To: org.hibernate.eclipse.console.test [3.7.1.Final-v20131205-0918-B107]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.978
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.978
+!MESSAGE From: JBoss Tools - Tests - Hibernate Developer Resources 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.978
+!MESSAGE To: org.hibernate.eclipse.test.feature.feature.group [3.7.1.Final-v20131205-0918-B107]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-01-28 15:53:38.989
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-01-28 15:53:38.989
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.989
+!MESSAGE Software being installed: JBoss Tools - Tests - Hibernate Developer Resources 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.989
+!MESSAGE Missing requirement: Hibernate Tools 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse 3.7.1.Final-v20131205-0918-B107) requires 'bundle org.eclipse.datatools.connectivity 1.2.7' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.989
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.989
+!MESSAGE From: Hibernate Console Test Plug-in 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.console.test 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.989
+!MESSAGE To: bundle org.hibernate.eclipse 3.7.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.989
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.989
+!MESSAGE From: JBoss Tools - Tests - Hibernate 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.989
+!MESSAGE To: org.hibernate.eclipse.console.test [3.7.1.Final-v20131205-0918-B107]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.989
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.989
+!MESSAGE From: JBoss Tools - Tests - Hibernate Developer Resources 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.989
+!MESSAGE To: org.hibernate.eclipse.test.feature.feature.group [3.7.1.Final-v20131205-0918-B107]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2016-01-28 15:53:38.990
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2016-01-28 15:53:38.990
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.990
+!MESSAGE Software being installed: JBoss Tools - Tests - Hibernate Developer Resources 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.990
+!MESSAGE Missing requirement: Hibernate Tools 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse 3.7.1.Final-v20131205-0918-B107) requires 'bundle org.eclipse.datatools.connectivity 1.2.7' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.990
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.990
+!MESSAGE From: Hibernate Console Test Plug-in 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.console.test 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.990
+!MESSAGE To: bundle org.hibernate.eclipse 3.7.0
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.990
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.990
+!MESSAGE From: JBoss Tools - Tests - Hibernate 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.990
+!MESSAGE To: org.hibernate.eclipse.console.test [3.7.1.Final-v20131205-0918-B107]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2016-01-28 15:53:38.990
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.990
+!MESSAGE From: JBoss Tools - Tests - Hibernate Developer Resources 3.7.1.Final-v20131205-0918-B107 (org.hibernate.eclipse.test.feature.source.feature.group 3.7.1.Final-v20131205-0918-B107)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2016-01-28 15:53:38.990
+!MESSAGE To: org.hibernate.eclipse.test.feature.feature.group [3.7.1.Final-v20131205-0918-B107]
+!SESSION 2016-01-28 16:01:32.857 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-28 16:09:15.722
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Administrator.H4LGEZA65BZV6GK'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2016-01-28 16:39:34.200
+!MESSAGE Project facet jst.ejb has not been defined. It is used in plugin org.eclipse.jst.j2ee.

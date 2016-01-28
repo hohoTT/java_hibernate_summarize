@@ -1,0 +1,14 @@
+package com.wt.hibernate.helloWorld;
+
+import java.sql.Date;
+
+public class News {
+	
+	private Integer id;
+	private String title;
+	private String author;
+	
+	private Date date;
+	
+	
+}
