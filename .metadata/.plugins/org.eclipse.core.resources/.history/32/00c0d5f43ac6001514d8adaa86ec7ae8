@@ -1,0 +1,16 @@
+package com.wt.hibernate.entity;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HibernateText {
+
+	@Test
+	public void test() {
+
+		
+		
+	}
+
+}

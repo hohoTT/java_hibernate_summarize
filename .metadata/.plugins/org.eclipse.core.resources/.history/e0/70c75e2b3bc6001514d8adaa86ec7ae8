@@ -1,0 +1,25 @@
+package com.wt.hibernate.entity;
+
+import static org.junit.Assert.*;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.junit.Test;
+
+public class HibernateText {
+	
+	private SessionFactory sessionFactory;
+	private Session session;
+	private Transaction transaction;
+
+	
+	
+	
+	@Test
+	public void test() {
+		
+		
+	}
+
+}

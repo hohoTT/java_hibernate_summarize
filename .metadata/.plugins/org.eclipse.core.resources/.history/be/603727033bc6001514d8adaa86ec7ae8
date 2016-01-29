@@ -1,0 +1,19 @@
+package com.wt.hibernate.entity;
+
+import static org.junit.Assert.*;
+
+import org.hibernate.SessionFactory;
+import org.junit.Test;
+
+public class HibernateText {
+	
+	private SessionFactory sessionFactopry;
+
+	@Test
+	public void test() {
+
+		
+		
+	}
+
+}
