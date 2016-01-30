@@ -35,6 +35,9 @@
     如果是 <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialec</property> 的话可能会在创建数据库表的时候出现错误。
     这一点是特别需要注意的！！！
 		
+    需要注意在第二个例子中的数据库的隔离级别的问题：
+ 相关的设置可以通过mysql的命令，同时也可以在 hibernate.cfg.xml 文件下进行对事务隔离级别的设置
+ 设置为<property name="connection.isolation">2</property>，此时便修改为读已提交。这是在对refresh()的测试中便可以体现出refresh()的作用。
 
 
 	
