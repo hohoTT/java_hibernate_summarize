@@ -51,17 +51,8 @@ public class HibernateText {
 	 * 
 	 */
 	@Test
-	public void testSave(){
-		News news = new News();
-		news.setTitle("AA");
-		news.setAuthor("aa");
-		news.setDate(new Date());
+	public testSave(){
 		
-		System.out.println(news);
-		
-		session.save(news);
-		
-		System.out.println(news);
 	}
 	
 	

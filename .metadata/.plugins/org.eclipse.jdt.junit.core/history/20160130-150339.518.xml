@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="HibernateText.testSessionFlush" project="hibernate_session" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="testSessionFlush" classname="com.wt.hibernate.entity.HibernateText" time="50.893"/>
-</testrun>

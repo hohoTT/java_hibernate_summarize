@@ -46,25 +46,7 @@ public class HibernateText {
 		session.close();
 		sessionFactory.close();
 	}
-	
-	/**
-	 * 
-	 */
-	@Test
-	public void testSave(){
-		News news = new News();
-		news.setTitle("AA");
-		news.setAuthor("aa");
-		news.setDate(new Date());
-		
-		System.out.println(news);
-		
-		session.save(news);
-		
-		System.out.println(news);
-	}
-	
-	
+
 	/**
 	 *  Clear(): «Â¿Ìª∫¥Ê
 	 */

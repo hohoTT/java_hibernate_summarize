@@ -60,7 +60,6 @@ public class HibernateText {
 		System.out.println(news);
 		
 		session.save(news);
-		
 		System.out.println(news);
 	}
 	
