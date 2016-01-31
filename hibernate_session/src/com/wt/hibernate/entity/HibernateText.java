@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.util.Date;
 
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -47,6 +48,45 @@ public class HibernateText {
 		sessionFactory.close();
 	}
 	
+	@Test
+	public void testEvict(){
+		
+	}
+	
+	/**
+	 * Delete: 执行删除操作，只要 OID 和数据标准中的一条记录对应，就会执行 delete 操作
+	 * 若 OID 在数据表中没有相对应的对象，则抛出异常
+	 * 
+	 * 可以通过设置 hibernate 配置文件 hibernate.use_identifier_rollback 为true，
+	 * 使删除对象后，把其 OID 置为 null
+	 */
+	@Test
+	public void testDelete(){
+		// 游离对象
+//		News news = new News();
+//		news.setId(1);
+		
+		// 持久化对象
+		News news = (News) session.get(News.class, 2);
+		
+		session.delete(news);
+		
+		System.out.println(news);
+	}
+	
+	/**
+	 * 注意：
+	 * 1. 若 OID 不为null， 但数据表中还没有和其对应的记录，会抛出一个异常
+	 * 2. 了解 OID 的值等于 unsave-value 属性值的对象，也被认为是一个游离对象
+	 * 
+	 */
+	@Test
+	public void testSaveOrUpdate(){
+		News news = new News("FF", "ff", new Date());
+		news.setId(1);
+		session.saveOrUpdate(news);
+	}
+	
 	/**
 	 * update:
 	 * 1. 若更新一个持久化对象，不需要显示调用的 update 方法，
@@ -56,9 +96,18 @@ public class HibernateText {
 	 * 
 	 * 需要注意的：
 	 * 1. 无论要更新的游离对象和数据表的记录是否，都会发送 update 语句
+	 * 	如何能让 update 方法不在盲目的发出 update 语句呢？
+	 *  解决方法 ： 在.hbm.xml 文件的class 节点设置中的 
+	 *  select-before-update="true" (默认为false), 但通常不需要设置该属性。
+	 *  
+	 * 2. 若数据表中没有对应的记录，但还调用了  update 方法，会抛出异常
+	 * 
+	 * 3. 当 update 关联一个游离对象时，
+	 * 如果在 session 的缓存中已经存在相同的 OID 的持久对象，会抛出异常
+	 * 因为在 session缓存中不能有两个 OID 相同的对象
 	 */
 	@Test
-	public void testUpadte() {
+	public void testUpdate() {
 		News news = (News) session.get(News.class, 1);
 		
 		transaction.commit();
@@ -68,6 +117,8 @@ public class HibernateText {
 		transaction = session.beginTransaction();
 		
 //		news.setAuthor("dddddd");
+		
+		News news2 = (News) session.get(News.class, 1);
 		
 		session.update(news);
 	}
