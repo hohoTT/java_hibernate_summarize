@@ -31,16 +31,6 @@
 		<!-- 删除对象后，使其 OID 置为 null -->
 		<property name="use_identifier_rollback">true</property>
 		
-		<!-- 配置 C3P0 数据源 -->
-		<property name="hibernate.c3p0.max_size">10</property>
-		<property name="hibernate.c3p0.min_size">5</property>
-		<property name="c3p0.acquire_increment">2</property>
-		
-		<property name="c3p0.idle_test_period">2000</property>
-		<property name="c3p0.timeout">2000</property>
-		
-		<property name="c3p0.max_statements">10</property>
-		
 		<!-- 指定关联的 Hibernate 映射文件  .hbm.xml文件 -->
 		<mapping resource="com/wt/hibernate/entity/News.hbm.xml"/>
     

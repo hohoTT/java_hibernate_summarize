@@ -63,7 +63,7 @@ public class HibernateText {
 				// TODO Auto-generated method stub
 				System.out.println(connection);
 				
-				// 调用存储过程，
+				// 调用存储过程
 			}
 		});
 		
