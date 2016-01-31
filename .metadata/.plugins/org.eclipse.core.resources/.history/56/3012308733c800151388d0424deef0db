@@ -2,8 +2,6 @@ package com.wt.hibernate.entity;
 
 import static org.junit.Assert.*;
 
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.Date;
 
 import org.hibernate.Hibernate;
@@ -11,7 +9,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.jdbc.Work;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 import org.junit.After;
@@ -52,36 +49,13 @@ public class HibernateText {
 	}
 	
 	/**
-	 * 
-	 */
-	@Test
-	public void testDoWork(){
-		session.doWork(new Work() {
-			
-			@Override
-			public void execute(Connection connection) throws SQLException {
-				// TODO Auto-generated method stub
-				System.out.println(connection);
-				
-				// 调用存储过程
-			}
-		});
-		
-	}
-	
-	/**
 	 * exict : 从 session 缓存中把指定的持久化对象移除
 	 * 
 	 */
 	@Test
 	public void testEvict(){
-		News news3 = (News) session.get(News.class, 3);
-		News news4 = (News) session.get(News.class, 4);
-		
-		news3.setTitle("QQ");
-		news4.setTitle("HH");
-		
-		session.evict(news3);
+		News news1 = (News) session.get(News.class, 1);
+		News news2 = (News) session.get(News.class, 2);
 	}
 	
 	/**

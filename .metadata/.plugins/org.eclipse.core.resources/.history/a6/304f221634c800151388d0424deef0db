@@ -62,8 +62,6 @@ public class HibernateText {
 			public void execute(Connection connection) throws SQLException {
 				// TODO Auto-generated method stub
 				System.out.println(connection);
-				
-				// 调用存储过程
 			}
 		});
 		
