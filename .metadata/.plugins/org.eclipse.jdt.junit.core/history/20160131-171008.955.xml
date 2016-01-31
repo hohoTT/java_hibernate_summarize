@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="HibernateText.testPersist" project="hibernate_session" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testcase name="testPersist" classname="com.wt.hibernate.entity.HibernateText" incomplete="true"/>
+  <testsuite name="Unrooted Tests" time="0.001">
+    <testcase name="initializationError" classname="org.junit.runner.manipulation.Filter" time="0.001">
+      <error>java.lang.Exception: No tests found matching Method testPersist(com.wt.hibernate.entity.HibernateText) from org.junit.internal.requests.ClassRequest@17dca04&#13;
+	at org.junit.internal.requests.FilterRequest.getRunner(FilterRequest.java:35)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.&lt;init&gt;(JUnit4TestReference.java:33)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestMethodReference.&lt;init&gt;(JUnit4TestMethodReference.java:25)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:54)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.loadTests(JUnit4TestLoader.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:444)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

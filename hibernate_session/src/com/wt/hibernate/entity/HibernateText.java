@@ -48,14 +48,95 @@ public class HibernateText {
 	}
 	
 	/**
+	 * update:
+	 * 1. 若更新一个持久化对象，不需要显示调用的 update 方法，
+	 * 因为 在调用 Transaction 的commit() 方法时，会先执行 session 的 flush 方法：
+	 * 2. 更新一个游离对象，需要显式的调用 session 的 update 方法， 
+	 * 可以把一个游离对象化为持久化对象
 	 * 
+	 * 需要注意的：
+	 * 1. 无论要更新的游离对象和数据表的记录是否，都会发送 update 语句
+	 */
+	@Test
+	public void testUpadte() {
+		News news = (News) session.get(News.class, 1);
+		
+		transaction.commit();
+		session.close();
+		
+		session = sessionFactory.openSession();
+		transaction = session.beginTransaction();
+		
+//		news.setAuthor("dddddd");
+		
+		session.update(news);
+	}
+	
+	/**
+	 * get & load :
+	 * 1. 执行 get 方法会立即加载对象
+	 * 	      执行 load 方法，若不使用该对象，则不会立即执行查询操作，而返回一个代理对象
+	 * 
+	 * 	  get 是立即检索，load 是延迟检索
+	 * 
+	 * 2. load 可能会抛出  LazyInitializationException 异常：
+	 *    在需要初始化时代理对象已经关闭 了session
+	 * 
+	 * 3. 若数据库表中没有相应的记录，
+	 * 	  get 返回 null
+	 * 	  load 抛出异常
+	 * 
+	 */
+	@Test
+	public void testLoad() {
+		News news = (News) session.load(News.class, 1);
+		System.out.println(news.getClass().getName());
+		
+		session.close();
+		
+		System.out.println(news);
+	}
+	
+	@Test
+	public void testGet() {
+		News news = (News) session.get(News.class, 1);
+		
+		session.close();
+		
+		System.out.println(news);
+	}
+	
+	/**
+	 * persist 也会执行 insert 操作
+	 * 
+	 * 和 save 的区别: 在persist 方法之前对象已经有 id 了， 则不会执行 insert 操作，会抛出异常
+	 */
+	@Test
+	public void testPersist	() {
+		News news = new News();
+		news.setTitle("DD");
+		news.setAuthor("dd");
+		news.setDate(new Date());
+		
+		session.persist(news);
+	}
+	
+	
+	/**
+	 * 1. save() 方法
+	 *  1.1> 使一个临时对象变为持久化对象
+	 *  1.2> 为对象分配 ID
+	 *  1.3> 在flush 缓存时会发送一条 insert 语句
+	 *  1.4> 在 save() 方法之前的 ID 是无效的
+	 *  1.5> 持久化对象的 ID 是不能被修改的！
 	 */
 	@Test
 	public void testSave(){
 		News news = new News();
-		news.setTitle("AA");
-		news.setAuthor("aa");
+		news.setTitle("CC");
+		news.setAuthor("cc");
 		news.setDate(new Date());
+		news.setId(666);
 		
 		System.out.println(news);
 		
