@@ -42,5 +42,10 @@
    相关的设置可以通过mysql的命令，同时也可以在 hibernate.cfg.xml 文件下进行对事务隔离级别的设置
 设置为<property name="connection.isolation">2</property>，此时便修改为读已提交。这是在对refresh()的测试中便可以体现出refresh()的作用。
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
-	
+以下是对 hibernate 的映射文件的说明讲解：
+
+  <hibernate-mapping></hibernate-mapping>标签中可以添加多个<class></class>标签，只需要在<hibernate-mapping></hibernate-mapping>标签中设置package=""，即包名，class为该包下的类即可。这样也省略了class 标签中的name一项，即统一了指定的相同包名。
+  
+  
