@@ -10,6 +10,9 @@ public class News {
 	
 	private Date date;
 
+	// 该属性值为: title: author
+	private String desc;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -58,5 +61,15 @@ public class News {
 		return "News [id=" + id + ", title=" + title + ", author=" + author
 				+ ", date=" + date + "]";
 	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+	
+	
 	
 }
