@@ -42,10 +42,7 @@
 		<property name="c3p0.max_statements">10</property>
 		
 		<!-- 设定 JDBC 的 Statement 读取数据的时候每次从数据库读取的记录条数 -->
-		<property name="hibernate.jdbc.fetch_size">100</property>
 		
-		<!-- 设定对数据库进行批量删除，批量更新和批量插入的时候的批次大小 -->
-		<property name="hibernate.jdbc.batch_size">30</property>
 		
 		<!-- 指定关联的 Hibernate 映射文件  .hbm.xml文件 -->
 		<mapping resource="com/wt/hibernate/entity/News.hbm.xml"/>
