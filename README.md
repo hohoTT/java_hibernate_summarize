@@ -6,6 +6,8 @@
 
 第二个例子：主要介绍hibernate中的session部分。
 
+第三个例子：主要用于介绍 hibernate 中的映射关系（多对一、一对多、一对一、多对多）
+
 首先介绍一下Hibernate：
 
 一个框架
@@ -48,4 +50,4 @@
 
   <hibernate-mapping></hibernate-mapping>标签中可以添加多个<class></class>标签，只需要在<hibernate-mapping></hibernate-mapping>标签中设置package=""，即包名，class为该包下的类即可。这样也省略了class 标签中的name一项，即统一了指定的相同包名。
   
-  
+第三部分主要需要注意的是 hibernate 中映射文件的填写。
