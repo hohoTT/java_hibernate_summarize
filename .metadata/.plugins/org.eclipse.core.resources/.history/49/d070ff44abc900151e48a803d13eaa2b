@@ -1,0 +1,8 @@
+package com.wt.hibernate.n_to_1;
+
+public class Order {
+
+	private Integer orderId;
+	private String orderName;
+	
+}
