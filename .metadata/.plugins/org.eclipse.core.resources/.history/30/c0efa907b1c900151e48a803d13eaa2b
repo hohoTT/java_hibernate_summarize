@@ -1,0 +1,78 @@
+package com.wt.hibernate.n_to_1;
+
+import static org.junit.Assert.*;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Blob;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Date;
+
+import org.hibernate.Hibernate;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.jdbc.Work;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class HibernateText {
+
+	private SessionFactory sessionFactory;
+	private Session session;
+	private Transaction transaction;
+
+	@Before
+	public void init() {
+		// 测试用
+		// System.out.println("init");
+
+		Configuration configuration = new Configuration().configure();
+		ServiceRegistry serviceRegistry = new ServiceRegistryBuilder()
+				.applySettings(configuration.getProperties())
+				.buildServiceRegistry();
+
+		sessionFactory = configuration.buildSessionFactory(serviceRegistry);
+
+		session = sessionFactory.openSession();
+
+		transaction = session.beginTransaction();
+	}
+
+	@After
+	public void destroy() {
+		// 测试用
+		// System.out.println("destroy");
+
+		transaction.commit();
+		session.close();
+		sessionFactory.close();
+	}
+	
+	@Test
+	public void testManyToOne() {
+		Customer customer = new Customer();
+		customer.setCustomerName("AA");
+		
+		Order order1 = new Order();
+		order1.setOrderName("ORDER-1");
+		
+		Order order2 = new Order();
+		order2.setOrderName("ORDER-2");
+
+		// 设定关联关系
+		order1.setCustomer(customer);
+		order2.setCustomer(customer);
+		
+		// 执行 save 操作
+		session.save(order1);
+		session.save(order2);		
+	}
+
+}
