@@ -22,12 +22,22 @@
 			<column name="AUTHOR" />
 		</property>
 
-		<property name="date" type="java.util.Date">
+		<property name="date" type="timestamp">
 			<column name="DATE" />
 		</property>
 		
 		<!-- 映射派生属性 -->
 		<property name="desc" formula="(SELECT concat(author, ': ', title) FROM NEWS n where n.id = id)">
+		</property>
+		
+		<!-- 映射大对象 -->
+		<!-- 若希望精确映射 SQL 类型们可以使用 sql-type 属性 -->
+		<property name="content">
+			<column name="CONTENT" sql-type="mediumtext"></column>
+		</property>
+
+		<property name="image">
+			<column name="IMAGE" sql-type="mediumtext"></column>
 		</property>
 
 	</class>

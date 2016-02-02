@@ -49,6 +49,7 @@
 		
 		<!-- 指定关联的 Hibernate 映射文件  .hbm.xml文件 -->
 		<mapping resource="com/wt/hibernate/entity/News.hbm.xml"/>
+		<mapping resource="com/wt/hibernate/entity/Worker.hbm.xml"/>
     
     </session-factory>
 

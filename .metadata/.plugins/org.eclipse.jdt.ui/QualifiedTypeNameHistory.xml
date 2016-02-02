@@ -14,9 +14,10 @@
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.hibernate.LazyInitializationException"/>
 <fullyQualifiedTypeName name="java.nio.channels.SeekableByteChannel"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="com.wt.hibernate.entity.News"/>
 <fullyQualifiedTypeName name="org.hibernate.Hibernate"/>
 <fullyQualifiedTypeName name="org.hibernate.jdbc.Work"/>
+<fullyQualifiedTypeName name="com.wt.hibernate.entity.News"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

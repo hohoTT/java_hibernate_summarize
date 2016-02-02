@@ -1,0 +1,7 @@
+package com.wt.hibernate.entity;
+
+public class Worker {
+
+	
+	
+}

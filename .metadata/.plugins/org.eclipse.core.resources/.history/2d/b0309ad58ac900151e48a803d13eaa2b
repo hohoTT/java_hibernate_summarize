@@ -1,0 +1,9 @@
+package com.wt.hibernate.entity;
+
+public class Worker {
+	
+	private Integer id;
+	private String name;
+	private Pay pay;
+	
+}
