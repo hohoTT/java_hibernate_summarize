@@ -7,6 +7,7 @@
 第二个例子：主要介绍hibernate中的session部分。
 
 第三个例子：主要用于介绍 hibernate 中的映射关系（多对一、一对多、一对一、多对多）
+	    其中的 com.wt.hibernate.n_to_1 是介绍 hibernate 中的多对一映射关系。
 
 首先介绍一下Hibernate：
 
