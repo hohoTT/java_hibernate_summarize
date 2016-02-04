@@ -48,8 +48,14 @@
 		<property name="hibernate.jdbc.batch_size">30</property>
 		
 		<!-- 指定关联的 Hibernate 映射文件  .hbm.xml文件 -->
+		
+		<!-- 以下是一对多，多对一的映射文件 -->
 		<mapping resource="com/wt/hibernate/n_to_1/both/Customer.hbm.xml"/>
 		<mapping resource="com/wt/hibernate/n_to_1/both/Order.hbm.xml"/>
+		
+		<!-- 以下是一对一的映射的文件 -->
+		<mapping resource="com/wt/hibernate/one_to_one/foreign/Manager.hbm.xml"/>
+		<mapping resource="com/wt/hibernate/one_to_one/foreign/Department.hbm.xml"/>
     
     </session-factory>
 

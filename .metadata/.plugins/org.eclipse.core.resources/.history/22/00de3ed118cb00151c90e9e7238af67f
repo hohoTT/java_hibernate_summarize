@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-2-4 16:24:34 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.wt.hibernate.one_to_one.foreign.Manager" table="MANAGER">
+        <id name="managerId" type="java.lang.Integer">
+            <column name="MANAGERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="managerName" type="java.lang.String">
+            <column name="MANAGERNAME" />
+        </property>
+        <one-to-one name="department" class="com.wt.hibernate.one_to_one.foreign.Department"></one-to-one>
+    </class>
+</hibernate-mapping>
