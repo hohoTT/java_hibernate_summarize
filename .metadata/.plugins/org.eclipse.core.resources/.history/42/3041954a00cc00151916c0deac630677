@@ -1,0 +1,9 @@
+package com.wt.hibernate.subclass;
+
+public class Student extends Person{
+
+	private String school;
+	
+	
+	
+}

@@ -66,6 +66,20 @@
     	<!-- 以下是多对多的映射文件 -->
     	<mapping resource="com/wt/hibernate/n_to_n/Category.hbm.xml"/>
 		<mapping resource="com/wt/hibernate/n_to_n/Item.hbm.xml"/>
+		
+		<!-- 以下是 使用 Subclass 的映射文件 -->
+		<!-- 
+			<mapping resource="com/wt/hibernate/subclass/Person.hbm.xml"/>
+		 -->
+		 
+		<!-- 以下是 使用 joined-Subclass 的映射文件 -->
+		<!-- 
+			<mapping resource="com/wt/hibernate/joined/subclass/Person.hbm.xml"/>
+		 -->
+		 
+		<!-- 以下是 使用 union-Subclass 的映射文件 -->
+		<mapping resource="com/wt/hibernate/union/subclass/Person.hbm.xml"/>
+		
     
     </session-factory>
 

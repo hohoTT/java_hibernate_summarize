@@ -28,12 +28,14 @@
 <fullyQualifiedTypeName name="org.hibernate.LazyInitializationException"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.n_to_1.Customer"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.n_to_1.both.Order"/>
-<fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.n_to_1.both.Customer"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.one_to_one.foreign.Department"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.one_to_one.foreign.Manager"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.wt.hibernate.n_to_n.Item"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="com.wt.hibernate.n_to_n.Category"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,9 @@
+package com.wt.hibernate.subclass;
+
+public class Person {
+
+	private Integer id;
+	private String personName;
+	
+	
+}

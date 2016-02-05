@@ -1,0 +1,5 @@
+package com.wt.hibernate.subclass;
+
+public class Person {
+
+}
