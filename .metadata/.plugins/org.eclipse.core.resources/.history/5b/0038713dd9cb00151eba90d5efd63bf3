@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-2-5 15:21:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.wt.hibernate.n_to_n.Item" table="ITEM">
+        <id name="itemId" type="java.lang.Integer">
+            <column name="ITEMID" />
+            <generator class="assigned" />
+        </id>
+        <property name="itemName" type="java.lang.String">
+            <column name="ITEMNAME" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+package com.wt.hibernate.n_to_n;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Category {
+	
+	private Integer categoryId;
+	private String categoryName;
+	
+	Set<Item> items = new HashSet<>();
+
+}

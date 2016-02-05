@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.wt.hibernate.n_to_n">
+
+    <class name="Category" table="CATEGORYS">
+    
+        <id name="categoryId" type="java.lang.Integer">
+            <column name="CATEGORY_ID" />
+            <generator class="native" />
+        </id>
+        
+        <property name="categoryName" type="java.lang.String">
+            <column name="CATEGORY_NAME" />
+        </property>
+        
+        <set name="items" table="ITEM" inverse="false" lazy="true">
+            <key>
+                <column name="CATEGORY_ID" />
+            </key>
+            <one-to-many class="Item" />
+        </set>
+        
+    </class>
+    
+</hibernate-mapping>

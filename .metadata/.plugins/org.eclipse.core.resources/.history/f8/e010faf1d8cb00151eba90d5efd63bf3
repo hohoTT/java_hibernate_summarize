@@ -1,0 +1,5 @@
+package com.wt.hibernate.n_to_n;
+
+public class Category {
+
+}
