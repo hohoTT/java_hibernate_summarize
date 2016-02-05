@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="HibernateText.testUpdate2" project="hibernate_mapping" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testcase name="testUpdate2" classname="com.wt.hibernate.n_to_1.both.HibernateText" time="8.293"/>
-</testrun>

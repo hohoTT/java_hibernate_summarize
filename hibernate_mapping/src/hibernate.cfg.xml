@@ -53,9 +53,16 @@
 		<mapping resource="com/wt/hibernate/n_to_1/both/Customer.hbm.xml"/>
 		<mapping resource="com/wt/hibernate/n_to_1/both/Order.hbm.xml"/>
 		
-		<!-- 以下是一对一的映射的文件 -->
-		<mapping resource="com/wt/hibernate/one_to_one/foreign/Manager.hbm.xml"/>
-		<mapping resource="com/wt/hibernate/one_to_one/foreign/Department.hbm.xml"/>
+		<!-- 以下是一对一，针对外键的映射的文件 -->
+		<!-- 
+			<mapping resource="com/wt/hibernate/one_to_one/foreign/Manager.hbm.xml"/>
+			<mapping resource="com/wt/hibernate/one_to_one/foreign/Department.hbm.xml"/>
+    	 -->
+    	
+    	<!-- 以下是一对一，针对主键的映射的文件 -->
+		<mapping resource="com/wt/hibernate/one_to_one/primary/Manager.hbm.xml"/>
+		<mapping resource="com/wt/hibernate/one_to_one/primary/Department.hbm.xml"/>
+    
     
     </session-factory>
 
