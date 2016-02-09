@@ -2,7 +2,6 @@
 
 有关java中hibernate的用法及其应用的总结，用于初学者的入门教程
 
-
 第一个例子：使用hibernate创建数据库表，并添加数据的例子。
 
 第二个例子：主要介绍hibernate中的session部分。
