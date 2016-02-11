@@ -33,9 +33,16 @@
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.one_to_one.foreign.Department"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.one_to_one.foreign.Manager"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.n_to_n.Item"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="com.wt.hibernate.n_to_n.Category"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
+<fullyQualifiedTypeName name="com.wt.hibernate.subclass.Person"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.wt.hibernate.subclass.Student"/>
+<fullyQualifiedTypeName name="com.wt.hibernate.joined.subclass.Student"/>
+<fullyQualifiedTypeName name="com.wt.hibernate.union.subclass.Student"/>
+<fullyQualifiedTypeName name="com.wt.hibernate.union.subclass.Person"/>
 </qualifiedTypeNameHistroy>
