@@ -1,6 +1,5 @@
 # java_hibernate_summarize
 
-
 有关java中hibernate的用法及其应用的总结，用于初学者的入门教程
 
 hibernate 的优点：
