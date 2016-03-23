@@ -1,8 +1,0 @@
-package com.wt.hibernate.one_to_one.foreign;
-
-public class Department {
-	
-	private Integer deptId;
-	
-
-}
