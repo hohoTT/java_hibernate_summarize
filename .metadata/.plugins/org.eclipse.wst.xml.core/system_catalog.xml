@@ -213,4 +213,7 @@
   <uri name="http://java.sun.com/xml/ns/javaee/web-facelettaglibary_2_0.xsd" uri="jar:file:/C:/Program Files/eclipse/plugins/org.jboss.tools.jst.web_3.6.1.Final-v20141209-0353-B90.jar!/catalog/web-facelettaglibrary_2_0.xsd"/>
   <uri name="http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd" uri="jar:file:/C:/Program Files/eclipse/plugins/org.jboss.tools.jst.web_3.6.1.Final-v20141209-0353-B90.jar!/catalog/web-facelettaglibrary_2_0.xsd"/>
   <public publicId="-//OASIS//DTD DocBook XML V4.1.2//EN" uri="file:/C:/Program Files/eclipse/plugins/org.jboss.tools.vpe.docbook_3.6.1.Final-v20141209-0344-B84/dtds/docbookx-4.1.2.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Mapping DTD 3.0//EN" uri="jar:file:/C:/Program Files/eclipse/plugins/org.hibernate.eclipse.libs_3.7.1.Final-v20131205-0918-B107/lib/hibernate/hibernate3.jar!/org/hibernate/hibernate-mapping-3.0.dtd" webURL="http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Configuration DTD 3.0//EN" uri="jar:file:/C:/Program Files/eclipse/plugins/org.hibernate.eclipse.libs_3.7.1.Final-v20131205-0918-B107/lib/hibernate/hibernate3.jar!/org/hibernate/hibernate-configuration-3.0.dtd" webURL="http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"/>
+  <public publicId="-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" uri="jar:platform:/plugin/org.hibernate.eclipse.libs/lib/tools/hibernate-tools.jar!/org/hibernate/hibernate-reverse-engineering-3.0.dtd"/>
 </catalog>
