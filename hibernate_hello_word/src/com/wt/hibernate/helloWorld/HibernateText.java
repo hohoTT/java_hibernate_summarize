@@ -43,12 +43,17 @@ public class HibernateText {
 		Transaction transaction = session.beginTransaction();
 		
 		// 4. 执行保存操作
-		News news = new News("Java", "hohoTT", new Date(new java.util.Date().getTime()));
+		News news = new News("Mysql", "aa", new Date(new java.util.Date().getTime()));
 		session.save(news);
+	
 		
 		// 查询语句
-//		News news2 = (News) session.get(News.class, 1);
+//		News news2 = (News) session.get(News.class, 4);
 //		System.out.println(news2);
+//		session.delete(news2);
+		
+		
+//		session.delete(news2);
 		
 		// 5. 提交事务
 		transaction.commit();

@@ -50,8 +50,8 @@
 		<!-- 指定关联的 Hibernate 映射文件  .hbm.xml文件 -->
 		
 		<!-- 以下是一对多，多对一的映射文件 -->
-		<mapping resource="com/wt/hibernate/n_to_1/both/Customer.hbm.xml"/>
-		<mapping resource="com/wt/hibernate/n_to_1/both/Order.hbm.xml"/>
+		<mapping resource="com/wt/hibernate/n_to_1/Customer.hbm.xml"/>
+		<mapping resource="com/wt/hibernate/n_to_1/Order.hbm.xml"/>
 		
 		<!-- 以下是一对一，针对外键的映射的文件 -->
 		<!-- 
@@ -59,14 +59,14 @@
 			<mapping resource="com/wt/hibernate/one_to_one/foreign/Department.hbm.xml"/>
     	 -->
     	
-    	<!-- 以下是一对一，针对主键的映射的文件 -->
+    	<!-- 以下是一对一，针对主键的映射的文件 
 		<mapping resource="com/wt/hibernate/one_to_one/primary/Manager.hbm.xml"/>
 		<mapping resource="com/wt/hibernate/one_to_one/primary/Department.hbm.xml"/>
-    
-    	<!-- 以下是多对多的映射文件 -->
+    -->
+    	<!-- 以下是多对多的映射文件
     	<mapping resource="com/wt/hibernate/n_to_n/Category.hbm.xml"/>
 		<mapping resource="com/wt/hibernate/n_to_n/Item.hbm.xml"/>
-		
+		 -->
 		<!-- 以下是 使用 Subclass 的映射文件 -->
 		<!-- 
 			<mapping resource="com/wt/hibernate/subclass/Person.hbm.xml"/>
@@ -77,9 +77,9 @@
 			<mapping resource="com/wt/hibernate/joined/subclass/Person.hbm.xml"/>
 		 -->
 		 
-		<!-- 以下是 使用 union-Subclass 的映射文件 -->
+		<!-- 以下是 使用 union-Subclass 的映射文件 
 		<mapping resource="com/wt/hibernate/union/subclass/Person.hbm.xml"/>
-		
+		-->
     
     </session-factory>
 
