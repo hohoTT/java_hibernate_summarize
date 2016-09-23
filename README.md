@@ -60,3 +60,4 @@ hibernate 的优点：
   <hibernate-mapping></hibernate-mapping>标签中可以添加多个<class></class>标签，只需要在<hibernate-mapping></hibernate-mapping>标签中设置package=""，即包名，class为该包下的类即可。这样也省略了class 标签中的name一项，即统一了指定的相同包名。
   
 第三部分主要需要注意的是 hibernate 中映射文件的填写。
+
